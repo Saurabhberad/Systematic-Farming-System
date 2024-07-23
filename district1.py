@@ -1,0 +1,146 @@
+import csv 
+
+file1=open("outmaha1.csv",'r')
+file2=open("ahmednagar.csv",'w')
+file3=open("akola.csv",'w')
+file4=open("amravati.csv",'w')
+file5=open("aurangabad.csv",'w')
+file6=open("beed.csv",'w')
+file7=open("bhandara.csv",'w')
+file8=open("buldhana.csv",'w')
+file9=open("chandrapur.csv",'w')
+file10=open("dhule.csv",'w')
+file11=open("gadchiroli.csv",'w')
+file12=open("gondia.csv",'w')
+file13=open("hingoli.csv",'w')
+file14=open("jalgaon.csv",'w')
+file15=open("jalna.csv",'w')
+file16=open("kolhapur.csv",'w')
+file17=open("latur.csv",'w')
+file18=open("nagpur.csv",'w')
+file19=open("nanded.csv",'w')
+file20=open("nandurbar.csv",'w')
+file21=open("nashik.csv",'w')
+file22=open("osmanabad.csv",'w')
+file23=open("parbhani.csv",'w')
+file24=open("pune.csv",'w')
+file25=open("raigad.csv",'w')
+file26=open("ratnagiri.csv",'w')
+file27=open("sangli.csv",'w')
+file28=open("satara.csv",'w')
+file29=open("sindhudurg.csv",'w')
+file30=open("solapur.csv",'w')
+file31=open("thane.csv",'w')
+file32=open("wardha.csv",'w')
+file33=open("washim.csv",'w')
+file34=open("yavatmal.csv",'w')
+
+data=csv.reader(file1,delimiter=',')
+data1=str(data)
+
+print("DATA PREPROCESSING-----------")
+print(" Start Seperating data files District wise")
+for row in data:
+	if(row[1]=='ahmednagar'):
+		file2.write(",".join(row))
+		file2.write('\n')
+	elif(row[1]=='akola'):
+		file3.write(",".join(row))
+		file3.write('\n')
+	elif(row[1]=='amravati'):
+		file4.write(",".join(row))
+		file4.write('\n')
+	elif(row[1]=='aurangabad'):
+		file5.write(",".join(row))
+		file5.write('\n')
+	elif(row[1]=='beed'):
+		file6.write(",".join(row))
+		file6.write('\n')
+	elif(row[1]=='bhandara'):
+		file7.write(",".join(row))
+		file7.write('\n')
+	elif(row[1]=='buldhana'):
+		file8.write(",".join(row))
+		file8.write('\n')
+	elif(row[1]=='chandrapur'):
+		file9.write(",".join(row))
+		file9.write('\n')
+	elif(row[1]=='dhule'):
+		file10.write(",".join(row))
+		file10.write('\n')
+	elif(row[1]=='gadchiroli'):
+		file11.write(",".join(row))
+		file11.write('\n')
+	elif(row[1]=='gondia'):
+		file12.write(",".join(row))
+		file12.write('\n')
+	elif(row[1]=='hingoli'):
+		file13.write(",".join(row))
+		file13.write('\n')
+	elif(row[1]=='jalgaon'):
+		file14.write(",".join(row))
+		file14.write('\n')
+	elif(row[1]=='jalna'):
+		file15.write(",".join(row))
+		file15.write('\n')
+	elif(row[1]=='kolhapur'):
+		file16.write(",".join(row))
+		file16.write('\n')
+	elif(row[1]=='latur'):
+		file17.write(",".join(row))
+		file17.write('\n')
+	elif(row[1]=='nagpur'):
+		file18.write(",".join(row))
+		file18.write('\n')
+	elif(row[1]=='nanded'):
+		file19.write(",".join(row))
+		file19.write('\n')
+	elif(row[1]=='nandurbar'):
+		file20.write(",".join(row))
+		file20.write('\n')
+	elif(row[1]=='nashik'):
+		file21.write(",".join(row))
+		file21.write('\n')
+	elif(row[1]=='osmanabad'):
+		file22.write(",".join(row))
+		file22.write('\n')
+	elif(row[1]=='parbhani'):
+		file23.write(",".join(row))
+		file23.write('\n')
+	elif(row[1]=='pune'):
+		file24.write(",".join(row))
+		file24.write('\n')
+	elif(row[1]=='raigad'):
+		file25.write(",".join(row))
+		file25.write('\n')
+	elif(row[1]=='ratnagiri'):
+		file26.write(",".join(row))
+		file26.write('\n')
+	elif(row[1]=='sangli'):
+		file27.write(",".join(row))
+		file27.write('\n')
+	elif(row[1]=='satara'):
+		file28.write(",".join(row))
+		file28.write('\n')
+	elif(row[1]=='sindhudurg'):
+		file29.write(",".join(row))
+		file29.write('\n')
+	elif(row[1]=='solapur'):
+		file30.write(",".join(row))
+		file30.write('\n')
+	elif(row[1]=='thane'):
+		file31.write(",".join(row))
+		file31.write('\n')
+	elif(row[1]=='wardha'):
+		file32.write(",".join(row))
+		file32.write('\n')
+	elif(row[1]=='washim'):
+		file33.write(",".join(row))
+		file33.write('\n')
+	elif(row[1]=='yavatmal'):
+		file34.write(",".join(row))
+		file34.write('\n')
+print(".\n.\n.\n.\n.\n.")	
+print(" 32 FILES CREATED Sucessfully..")
+file1.close()
+file2.close()
